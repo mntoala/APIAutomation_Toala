@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuite">
+    <test name="MyTest">
+        <classes>
+            <class name="Tests.successResponseP2" />
+            <class name="Tests.verifyElementsP2" />
+            <class name="Tests.checkValuesPlanet" />
+            <class name="Tests.compareValuesToUrl" />
+            <class name="Tests.Film7Test" />
+        </classes>
+    </test>
+</suite>
