@@ -1,11 +1,13 @@
 package Tests;
 
+import Models.Endpoints.FilmsEndpoints;
+import Models.Films;
 import org.testng.annotations.Test;
-import lib.BaseTest;
 
-public class Film7Test extends BaseTest {
+public class Film7Test {
+    Films newFilm = new Films();
     @Test
     public void films7Test(){
-        filmsResponses.verifyStatusCode("films",7,404);
+        newFilm.verifyStatusCode("films",7,404);
     }
 }

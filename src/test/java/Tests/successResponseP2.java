@@ -1,13 +1,14 @@
 package Tests;
 
-import org.testng.Assert;
+import ModelsApplication.PeopleApp;
 import org.testng.annotations.Test;
-import lib.BaseTest;
 
-public class successResponseP2 extends BaseTest {
+public class successResponseP2{
+    public PeopleApp peopleApp = new PeopleApp();
+
     @Test
     public void responseTest(){
-        Assert.assertEquals(peopleTest.getSkin_color(),"gold");
-        Assert.assertEquals(peopleTest.getFilms().size(),6);
+        peopleApp.checkSkinColor("gold");
+        peopleApp.checkFilmsSize(6);
     }
 }

@@ -1,12 +1,13 @@
 package Tests;
 
-import org.testng.Assert;
+import ModelsApplication.PlanetsApp;
 import org.testng.annotations.Test;
-import lib.BaseTest;
 
-public class compareValuesToUrl extends BaseTest {
+public class compareValuesToUrl {
+    PlanetsApp planetsApp= new PlanetsApp();
+
     @Test
     public void compareResponses(){
-        Assert.assertEquals(responsePlanetTest,responsePlanetToCompare, "Responses do not match");
+        planetsApp.compareResponsesOfPlanets();
     }
 }
